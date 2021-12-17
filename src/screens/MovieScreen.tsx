@@ -58,10 +58,10 @@ const MovieScreen = ({ route }) => {
           {
             (Object.keys(infoMovie).length > 0) && (
               <FlatList
-                data={Object.keys(MOVIE_INFOS)}
-                keyExtractor={(item, index) => `movieInfo${item}${index}`}
+                data={Object.entries(MOVIE_INFOS)}
+                keyExtractor={(item, index) => `movieInfo${item[0]}${index}`}
                 renderItem={({ item }) => (
-                  <MovieTextInfo>{item}: {infoMovie[item]}</MovieTextInfo>
+                  <MovieTextInfo>{item[1]}: {infoMovie[item[0]]}</MovieTextInfo>
                 )}
               />
             )

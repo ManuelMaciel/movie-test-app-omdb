@@ -44,7 +44,7 @@ export const TextGenre = styled.Text`
     fontSize: 14px;
     textTransform: capitalize;
     textAlign: center;
-    padding: 10px;
+    /* padding: 10px; */
     fontWeight: bold;
     color: #560BAD;
 `;
